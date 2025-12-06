@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  agentarea:
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2025-12-07T01:21:09.314723+03:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.1.10
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 23.2.12
+    description: AgentArea Platform
+    digest: 6b893ce80baf275fcc8735cf302e784b7ea8da0c5263fa06562adc20ae49bf55
+    name: agentarea
+    type: application
+    urls:
+    - https://agentarea.github.io/helm-charts/agentarea-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-12-07T01:21:09.304232+03:00"
