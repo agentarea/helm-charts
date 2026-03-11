@@ -3,7 +3,26 @@ entries:
   agentarea:
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2026-03-09T21:04:21.320057153Z"
+    created: "2026-03-11T08:03:01.762448796Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.1.10
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 23.2.12
+    description: AgentArea Platform
+    digest: 0eae19ffdf46eb243748b10155792619bff9a7e5ec82421cfd46da2e663e56a9
+    name: agentarea
+    type: application
+    urls:
+    - https://agentarea.github.io/helm-charts/agentarea-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 0.0.8
+    created: "2026-03-11T08:03:01.749115852Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -22,7 +41,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2026-03-09T21:04:21.305347962Z"
+    created: "2026-03-11T08:03:01.735803518Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -41,7 +60,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2026-03-09T21:04:21.290213678Z"
+    created: "2026-03-11T08:03:01.722225576Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -60,7 +79,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2026-03-09T21:04:21.275862239Z"
+    created: "2026-03-11T08:03:01.707828573Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -79,7 +98,7 @@ entries:
     version: 0.0.1
   - apiVersion: v2
     appVersion: 0.0.3-dev.d67f534
-    created: "2026-03-09T21:04:21.260970249Z"
+    created: "2026-03-11T08:03:01.691454653Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -98,7 +117,7 @@ entries:
     version: 0.0.1-dev.d67f534
   - apiVersion: v2
     appVersion: 0.0.3-dev.6c7904f
-    created: "2026-03-09T21:04:21.246416872Z"
+    created: "2026-03-11T08:03:01.676914739Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -117,7 +136,7 @@ entries:
     version: 0.0.1-dev.6c7904f
   - apiVersion: v2
     appVersion: 0.0.3-dev.36178e6
-    created: "2026-03-09T21:04:21.232541253Z"
+    created: "2026-03-11T08:03:01.662842475Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -134,4 +153,4 @@ entries:
     urls:
     - https://agentarea.github.io/helm-charts/agentarea-0.0.1-dev.36178e6.tgz
     version: 0.0.1-dev.36178e6
-generated: "2026-03-09T21:04:21.217962748Z"
+generated: "2026-03-11T08:03:01.648475726Z"
