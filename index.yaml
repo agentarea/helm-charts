@@ -40,7 +40,66 @@ entries:
       artifacthub.io/license: Apache-2.0
     apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-10-20T12:16:44.313758154Z"
+    created: "2026-10-21T20:24:39.600800768Z"
+    dependencies:
+    - condition: redis.enabled
+      name: valkey
+      repository: https://valkey.io/valkey-helm/
+      version: 0.12.0
+    description: AgentArea Platform
+    digest: d0852fc98ffef36ab0417fa622ecf7afb3a466c8f40f8ece7f709f4e8bbf9c90
+    home: https://agentarea.ai
+    icon: https://raw.githubusercontent.com/agentarea/agentarea/main/agentarea-webapp/public/Icon.png
+    maintainers:
+    - name: AgentArea
+      url: https://github.com/agentarea
+    name: agentarea
+    sources:
+    - https://github.com/agentarea/agentarea
+    type: application
+    urls:
+    - https://agentarea.github.io/helm-charts/agentarea-0.0.29.tgz
+    version: 0.0.29
+  - annotations:
+      artifacthub.io/images: |
+        - name: agentarea/agentarea-api
+          image: agentarea/agentarea-api:0.1.1
+        - name: agentarea/agentarea-events
+          image: agentarea/agentarea-events:0.1.1
+        - name: agentarea/agentarea-frontend
+          image: agentarea/agentarea-frontend:0.1.1
+        - name: agentarea/agentarea-mcp-base
+          image: agentarea/agentarea-mcp-base:0.1.1
+        - name: agentarea/agentarea-mcp-manager
+          image: agentarea/agentarea-mcp-manager:0.1.1
+        - name: agentarea/agentarea-mcp-runner
+          image: agentarea/agentarea-mcp-runner:0.1.1
+        - name: agentarea/agentarea-worker
+          image: agentarea/agentarea-worker:0.1.1
+        - name: amazon/aws-cli
+          image: amazon/aws-cli:2.38.2
+        - name: busybox
+          image: busybox:1.38.0
+        - name: valkey/valkey
+          image: docker.io/valkey/valkey:9.1.2
+        - name: openfga/openfga
+          image: openfga/openfga:v1.22.0
+        - name: oryd/kratos
+          image: oryd/kratos:v26.2.0
+        - name: postgres
+          image: postgres:16.15-alpine
+        - name: pause
+          image: registry.k8s.io/pause:3.10.2
+        - name: rustfs/rustfs
+          image: rustfs/rustfs:1.0.3
+        - name: temporalio/admin-tools
+          image: temporalio/admin-tools:1.32.1
+        - name: temporalio/server
+          image: temporalio/server:1.32.1
+      artifacthub.io/license: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.1.1
+    created: "2026-10-21T20:24:39.596496842Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -62,7 +121,7 @@ entries:
     version: 0.0.28
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-10-20T12:16:44.309007693Z"
+    created: "2026-10-21T20:24:39.592560743Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -77,7 +136,7 @@ entries:
     version: 0.0.27
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-10-20T12:16:44.305241032Z"
+    created: "2026-10-21T20:24:39.589011989Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -92,7 +151,7 @@ entries:
     version: 0.0.26
   - apiVersion: v2
     appVersion: 0.0.16
-    created: "2026-10-20T12:16:44.300411977Z"
+    created: "2026-10-21T20:24:39.585668736Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -107,7 +166,7 @@ entries:
     version: 0.0.25
   - apiVersion: v2
     appVersion: 0.0.16
-    created: "2026-10-20T12:16:44.29595159Z"
+    created: "2026-10-21T20:24:39.582450922Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -122,7 +181,7 @@ entries:
     version: 0.0.24
   - apiVersion: v2
     appVersion: 0.0.16
-    created: "2026-10-20T12:16:44.291847989Z"
+    created: "2026-10-21T20:24:39.57862533Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -137,7 +196,7 @@ entries:
     version: 0.0.23
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.287140802Z"
+    created: "2026-10-21T20:24:39.575112648Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -152,7 +211,7 @@ entries:
     version: 0.0.22
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.282582583Z"
+    created: "2026-10-21T20:24:39.571604358Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -167,7 +226,7 @@ entries:
     version: 0.0.21
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.278731706Z"
+    created: "2026-10-21T20:24:39.5686149Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -182,7 +241,7 @@ entries:
     version: 0.0.20
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.274090043Z"
+    created: "2026-10-21T20:24:39.564935318Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -197,7 +256,7 @@ entries:
     version: 0.0.19
   - apiVersion: v2
     appVersion: 0.0.14
-    created: "2026-10-20T12:16:44.269598204Z"
+    created: "2026-10-21T20:24:39.561541758Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -212,7 +271,7 @@ entries:
     version: 0.0.18
   - apiVersion: v2
     appVersion: 0.0.14
-    created: "2026-10-20T12:16:44.265965884Z"
+    created: "2026-10-21T20:24:39.558379959Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -227,7 +286,7 @@ entries:
     version: 0.0.17
   - apiVersion: v2
     appVersion: 0.0.13
-    created: "2026-10-20T12:16:44.261398883Z"
+    created: "2026-10-21T20:24:39.555215707Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -242,7 +301,7 @@ entries:
     version: 0.0.16
   - apiVersion: v2
     appVersion: 0.0.13
-    created: "2026-10-20T12:16:44.257330564Z"
+    created: "2026-10-21T20:24:39.551675015Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -257,7 +316,7 @@ entries:
     version: 0.0.15
   - apiVersion: v2
     appVersion: 0.0.12
-    created: "2026-10-20T12:16:44.253862802Z"
+    created: "2026-10-21T20:24:39.548419445Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -272,7 +331,7 @@ entries:
     version: 0.0.14
   - apiVersion: v2
     appVersion: 0.0.12
-    created: "2026-10-20T12:16:44.249448735Z"
+    created: "2026-10-21T20:24:39.545978115Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -287,7 +346,7 @@ entries:
     version: 0.0.13
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2026-10-20T12:16:44.24619953Z"
+    created: "2026-10-21T20:24:39.543155699Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -302,7 +361,7 @@ entries:
     version: 0.0.12
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2026-10-20T12:16:44.242034607Z"
+    created: "2026-10-21T20:24:39.540713628Z"
     dependencies:
     - condition: redis.enabled
       name: valkey
@@ -333,7 +392,58 @@ entries:
       artifacthub.io/license: Apache-2.0
     apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-10-20T12:16:44.326555549Z"
+    created: "2026-10-21T20:24:39.614261243Z"
+    dependencies:
+    - alias: opensandbox-base
+      condition: opensandbox-controller.enabled
+      name: base
+      repository: ""
+      version: 1.1.1
+    - condition: opensandbox-controller.enabled
+      name: opensandbox-controller
+      repository: ""
+      version: 1.1.1
+    description: 'AgentArea data plane for an execution cluster: the mcp-manager data-plane
+      API for MCP servers, optionally an OpenSandbox server for agent sandboxes, and
+      the namespaces, admission and network policy the untrusted workloads of both
+      are confined to.'
+    digest: 3299d8f8a46c38d9845f4d2e03adcb4274d0a6528c3c7f034f0b1d7f4b03d7f2
+    home: https://github.com/agentarea/agentarea
+    icon: https://raw.githubusercontent.com/agentarea/agentarea/main/agentarea-webapp/public/Icon.png
+    keywords:
+    - mcp
+    - gvisor
+    - sandbox
+    - opensandbox
+    kubeVersion: '>=1.30.0-0'
+    maintainers:
+    - name: AgentArea
+      url: https://github.com/agentarea
+    name: agentarea-dataplane
+    sources:
+    - https://github.com/agentarea/agentarea/tree/main/agentarea-mcp-manager
+    type: application
+    urls:
+    - https://agentarea.github.io/helm-charts/agentarea-dataplane-0.2.9.tgz
+    version: 0.2.9
+  - annotations:
+      artifacthub.io/images: |
+        - name: agentarea/agentarea-mcp-base
+          image: agentarea/agentarea-mcp-base:0.1.1
+        - name: agentarea/agentarea-mcp-manager
+          image: agentarea/agentarea-mcp-manager:0.1.1
+        - name: opensandbox/controller
+          image: opensandbox/controller:release-1.1.1@sha256:aca5cda09a0fbc5867e6028f8b6aaa60fdcd78ebee634f71a263d45d5f6c2bab
+        - name: opensandbox/execd
+          image: opensandbox/execd:release-1.1.1@sha256:cda2bc35409bbf57561599b316cafb899598f7dce671332e7ceda14eb1cfeded
+        - name: opensandbox/server
+          image: opensandbox/server:release-1.1.1@sha256:bcd5f264101262cebfa7e1ff9cd0424403e42f31a6596e4364cf90d8cb5c936b
+        - name: pause
+          image: registry.k8s.io/pause:3.10.2
+      artifacthub.io/license: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.1.1
+    created: "2026-10-21T20:24:39.612639061Z"
     dependencies:
     - alias: opensandbox-base
       condition: opensandbox-controller.enabled
@@ -369,7 +479,7 @@ entries:
     version: 0.2.8
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.324606765Z"
+    created: "2026-10-21T20:24:39.61019698Z"
     dependencies:
     - condition: opensandbox-controller.enabled
       name: opensandbox-controller
@@ -396,7 +506,7 @@ entries:
     version: 0.2.7
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.322906819Z"
+    created: "2026-10-21T20:24:39.608445983Z"
     dependencies:
     - condition: opensandbox-controller.enabled
       name: opensandbox-controller
@@ -423,7 +533,7 @@ entries:
     version: 0.2.6
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.321281216Z"
+    created: "2026-10-21T20:24:39.606841478Z"
     dependencies:
     - condition: opensandbox-controller.enabled
       name: opensandbox-controller
@@ -450,7 +560,7 @@ entries:
     version: 0.2.5
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.319992452Z"
+    created: "2026-10-21T20:24:39.60590979Z"
     dependencies:
     - condition: opensandbox-controller.enabled
       name: opensandbox-controller
@@ -477,7 +587,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.31871094Z"
+    created: "2026-10-21T20:24:39.604944851Z"
     dependencies:
     - condition: opensandbox-controller.enabled
       name: opensandbox-controller
@@ -504,7 +614,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.317456127Z"
+    created: "2026-10-21T20:24:39.603971961Z"
     dependencies:
     - condition: opensandbox-controller.enabled
       name: opensandbox-controller
@@ -531,7 +641,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2026-10-20T12:16:44.315184874Z"
+    created: "2026-10-21T20:24:39.60263498Z"
     dependencies:
     - condition: opensandbox-controller.enabled
       name: opensandbox-controller
@@ -556,4 +666,4 @@ entries:
     urls:
     - https://agentarea.github.io/helm-charts/agentarea-dataplane-0.2.1.tgz
     version: 0.2.1
-generated: "2026-10-20T12:16:44.238430149Z"
+generated: "2026-10-21T20:24:39.536939283Z"
